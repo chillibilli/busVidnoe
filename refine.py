@@ -40,9 +40,9 @@ def refine_471(db, route_id):
     db.exec("UPDATE busstop SET busstop_name = 'Вегас' WHERE busstop_name = 'Каширское шоссе' ;")
 
     # перечислить главные остановки маршрута, привязать к направлениям
-    db.insert_major_stop('ст.Расторгуево',    route_id, order_num=1, directions_from_here=[1], )
-    db.insert_major_stop('Кинотеатр',         route_id, order_num=2, directions_from_here=[1, 2])
-    db.insert_major_stop('ПЛК',               route_id, order_num=3, directions_from_here=[1, 2])
-    db.insert_major_stop('ул.Завидная, д.24', route_id, order_num=4, directions_from_here=[1])
-    db.insert_major_stop('Вегас',             route_id, order_num=5, directions_from_here=[1, 2])
-    db.insert_major_stop('м. Домодедовская',  route_id, order_num=6, directions_from_here=[2])
+    db.insert_major_stop('ст.Расторгуево',    route_id, order_num=1, directions_from_here=[3], )
+    db.insert_major_stop('Кинотеатр',         route_id, order_num=2, directions_from_here=[3, 5])
+    db.insert_major_stop('ПЛК',               route_id, order_num=3, directions_from_here=[3, 4, 5])
+    db.insert_major_stop('ул.Завидная, д.24', route_id, order_num=4, directions_from_here=[3, 4])
+    db.insert_major_stop('Вегас',             route_id, order_num=5, directions_from_here=[3, 4, 5])
+    db.insert_major_stop('м. Домодедовская',  route_id, order_num=6, directions_from_here=[4, 5])

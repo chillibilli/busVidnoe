@@ -49,7 +49,7 @@ create_all = [
 
     """CREATE TABLE busstop (
         busstop_id integer PRIMARY KEY,
-        busstop_name varchar 
+        busstop_name varchar UNIQUE
     );
     """,
 
@@ -83,17 +83,6 @@ create_all = [
         direction_id integer REFERENCES direction(direction_id)
     );
     """,
-
-    """CREATE TABLE chat (
-        chat_id varchar PRIMARY_KEY,
-        route_id integer,
-        major_stop_id integer,
-        busstop_id integer,
-        direction_id integer,
-        weekday_id integer,
-        hour integer
-    );
-    """
 
 ]
 

@@ -3,6 +3,7 @@ from telegram.ext import *
 import logging
 from menus import *
 from bot_token import bot_token
+from db_bot import *
 
 
 # Enable logging

@@ -2,7 +2,7 @@ from sql import *
 import sqlite3
 
 
-class DB:
+class DbScrapHelper:
 
     def __init__(self):
         self.db_file = 'mostrans.db'

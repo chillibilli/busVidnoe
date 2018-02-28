@@ -1,8 +1,8 @@
-from db import *
+from db_scrap import *
 from scrap import *
 from refine import *
 
-db = DB()
+db = DbScrapHelper()
 
 db.recreate()
 

@@ -1,9 +1,13 @@
+from db_bot import *
+
+
 BACK_TO_START = '<< с начала'
+
+
 
 def route_menu():
     return [
-        ['489', '471', 'все'],
-        [BACK_TO_START]]
+        ['471', '489']]
 
 
 def depart_menu():
@@ -50,7 +54,7 @@ def template_of(items):
 
 
 def route_menu_re():
-    return template_of(list(flat(route_menu()))[:-1])
+    return template_of(list(flat(route_menu())))
 
 
 def depart_menu_re():
